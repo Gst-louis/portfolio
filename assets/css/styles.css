@@ -227,12 +227,7 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-}
+
 .home__blob {
   fill: var(--first-color);
 }
@@ -318,15 +313,28 @@ img {
 .skills__html {
   width: 75%;
 }
-.skills__css {
+.skills__php {
   width: 60%;
 }
 .skills__js {
   width: 50%;
 }
-.skills__ux {
-  width: 80%;
+.skills__py {
+  width: 75%;
 }
+
+.skills__linux {
+  width: 60%;
+}
+
+.skills__windows {
+  width: 60%;
+}
+
+.skills__cisco {
+  width: 60%;
+}
+
 .skills__img {
   border-radius: 0.5rem;
 }
@@ -396,9 +404,7 @@ img {
   .home {
     row-gap: 2rem;
   }
-  .home__img {
-    width: 200px;
-  }
+
 }
 @media screen and (min-width: 576px) {
   .home {
@@ -414,10 +420,7 @@ img {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
-  .home__img {
-    width: 300px;
-    bottom: 25%;
-  }
+
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -484,10 +487,7 @@ img {
   .home {
     padding: 8rem 0 2rem;
   }
-  .home__img {
-    width: 400px;
-    bottom: 10%;
-  }
+
   .about__container {
     padding-top: 2rem;
   }
@@ -513,7 +513,5 @@ img {
   .home {
     padding: 10rem 0 2rem;
   }
-  .home__img {
-    width: 450px;
-  }
+
 }
