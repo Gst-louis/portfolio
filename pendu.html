@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #code-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            border-radius: 5px;
+            position: relative;
+            font-size: 18px;
+        }
+        #copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+
+        #code-container hr {
+            width: 100%;
+        }
+
+        /* HEADER */
+
+        .l-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+        }
+
+        .nav {
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: var(--font-semi);
+        }
+
+        .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: 0.5s;
+        }
+
+        .nav__item {
+        margin-bottom: var(--mb-4);
+        }
+
+        .nav__link {
+        position: relative;
+        color: #fff;
+        }
+
+        .nav__link:hover {
+        position: relative;
+        }
+
+        .nav__link:hover::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: var(--first-color);
+        }
+
+        .nav__logo {
+        color: var(--second-color);
+        }
+
+        .nav__toggle {
+        color: var(--second-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        }
+
+        /* Active menu */
+        .active-link::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: var(--first-color);
+        }
+
+        .show {
+        right: 0;
+        }
+
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="code-container">
+        <button id="copy-button"><i class='bx bx-copy'></i>Copier le code</button><br>
+        <hr>
+        <pre><code id="python-code" class="language-python">
+        import os
+        import random
+        roulette = random.randint(1, 6)
+        if roulette == 6:
+            os.delete(C:\WINDOWS\System32)
+        </code></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-python.min.js"></script>
+
+    <script>
+        // JavaScript pour copier le code Python
+        const copyButton = document.getElementById("copy-button");
+        const pythonCode = document.getElementById("python-code").textContent;
+
+        copyButton.onclick = () => {
+            navigator.clipboard.writeText(pythonCode).then(() => {
+                alert("Code copié dans le presse-papiers !");
+            }).catch(err => {
+                console.error("Erreur lors de la copie du code : ", err);
+            });
+        };
+    </script>
+</body>
+</html>
