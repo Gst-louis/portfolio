@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSo</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS pour ajuster les images dans le carousel */
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Enlever les bordures du tableau */
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content-table td {
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Gabriel</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link active-link" target="_blank">Accueil</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link" target="_blank">À propos</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link" target="_blank">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link" target="_blank">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="max-width: 800px; text-align: center; margin-top: 80px;">
+        <h1 class="home__title">BankSo</h1>
+        <p style="font-size: 18px;">Bankso est un projet de simulation de la création d'une infrastructure pour une banque en ligne.</p>
+        <table class="content-table">
+            <tr>
+                <td>
+                    <h3>Réseau et Pare-feu</h3>
+                    <ul>
+                        <li>AD DS</li>
+                        <li>Firewalld</li>
+                        <li>DMZ</li>
+                    </ul>
+                </td>
+                <td>
+                    <h3>Applications Web</h3>
+                    <ul>
+                        <li>Serveur Ngninx</li>
+                        <li>PKI</li>
+                        <li>Certificat auto-signé</li>
+                    </ul>
+                </td>
+                <td>
+                    <h3>Reverse Proxy</h3>
+                    <ul>
+                       <li>DMZ</li>
+                       <li>Redirection de ports</li>
+                       <li>Mod_Proxy</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/diapo/0.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/1.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/2.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/3.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/4.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/5.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/6.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/7.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/8.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/9.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/10.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/11.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/12.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/13.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/14.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/diapo/15.jpg" alt="Slide 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+    </div><br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
