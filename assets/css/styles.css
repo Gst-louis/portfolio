@@ -62,6 +62,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #007bff;
 }
 
 img {
@@ -281,6 +282,17 @@ img {
 .skills__text {
   margin-bottom: var(--mb-4);
 }
+
+.skills__text a {
+  text-decoration: none;
+  color: black;
+}
+
+.skills__text a:hover {
+  text-decoration: underline;
+}
+
+
 .skills__data {
   display: flex;
   justify-content: space-between;
